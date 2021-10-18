@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="weight <= 65.5\ngini = 0.819\nsamples = 79786\nvalue = [11666, 19912, 14571, 12801, 6646, 14190]", fillcolor="#f7fdef"] ;
+1 [label="weight <= 56.5\ngini = 0.778\nsamples = 59097\nvalue = [9677, 19259, 14490, 7212, 6636, 1823]", fillcolor="#f5fcea"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="weight <= 52.5\ngini = 0.689\nsamples = 26994\nvalue = [1195, 7437, 11353, 525, 6385, 99]", fillcolor="#d7fae6"] ;
+1 -> 2 ;
+3 [label="gini = 0.623\nsamples = 11345\nvalue = [131, 1475, 4871, 73, 4760, 35]", fillcolor="#fcfffd"] ;
+2 -> 3 ;
+4 [label="gini = 0.667\nsamples = 15649\nvalue = [1064, 5962, 6482, 452, 1625, 64]", fillcolor="#f4fef8"] ;
+2 -> 4 ;
+5 [label="weight <= 61.5\ngini = 0.739\nsamples = 32103\nvalue = [8482, 11822, 3137, 6687, 251, 1724]", fillcolor="#f1fbe3"] ;
+1 -> 5 ;
+6 [label="gini = 0.695\nsamples = 18894\nvalue = [4265, 8787, 2766, 2392, 229, 455]", fillcolor="#e1f7c2"] ;
+5 -> 6 ;
+7 [label="gini = 0.73\nsamples = 13209\nvalue = [4217, 3035, 371, 4295, 22, 1269]", fillcolor="#fdfeff"] ;
+5 -> 7 ;
+8 [label="weight <= 72.5\ngini = 0.559\nsamples = 20689\nvalue = [1989, 653, 81, 5589, 10, 12367]", fillcolor="#f3a6d3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="weight <= 68.5\ngini = 0.662\nsamples = 11802\nvalue = [1807, 601, 69, 4627, 3, 4695]", fillcolor="#fffdfe"] ;
+8 -> 9 ;
+10 [label="gini = 0.691\nsamples = 5651\nvalue = [1186, 446, 42, 2419, 1, 1557]", fillcolor="#d5eafa"] ;
+9 -> 10 ;
+11 [label="gini = 0.6\nsamples = 6151\nvalue = [621, 155, 27, 2208, 2, 3138]", fillcolor="#f9d0e8"] ;
+9 -> 11 ;
+12 [label="weight <= 78.5\ngini = 0.243\nsamples = 8887\nvalue = [182, 52, 12, 962, 7, 7672]", fillcolor="#e957ac"] ;
+8 -> 12 ;
+13 [label="gini = 0.39\nsamples = 3921\nvalue = [144, 39, 9, 763, 5, 2961]", fillcolor="#ed75bb"] ;
+12 -> 13 ;
+14 [label="gini = 0.098\nsamples = 4966\nvalue = [38, 13, 3, 199, 2, 4711]", fillcolor="#e644a2"] ;
+12 -> 14 ;
+}
